@@ -1,15 +1,16 @@
 import {React,Component} from 'react';
 import {Link} from 'react-router-dom';
-import BlogDetailPage from './BlogDetailPage';
-import {Route, Routes,BrowserRouter} from 'react-router-dom';
+
+
 class BlogCard extends Component {
     
+
     render()
      {  
-        console.log(this.props.day)
+        
 
-        const cardProps = this.props;
-     
+        
+        
         return (
 
     
@@ -31,7 +32,7 @@ class BlogCard extends Component {
                     <h5 className="font-weight-medium mb-2">{this.props.mainHead}</h5>
                     <p className="mb-4">{this.props.subHead}Detaylı bilgi...</p>
                     {/* <a className="btn btn-sm btn-primary py-2" href="dokumaHali.html">{this.props.id}Okumaya devam et...</a> */}
-                    <Link to="/blog/blog-detay" state={cardProps} className="btn btn-sm btn-primary py-2">{this.props.id}Okumaya devam et...</Link>
+                    <Link to={`/blog/blog-detay/${this.props.id}`} className="btn btn-sm btn-primary py-2" >{this.props.id}Okumaya devam et...</Link>
              
 
                 </div>
