@@ -1,11 +1,13 @@
 import React from 'react';
 import Features from '../Features';
-import Header from '../Header';
+
 import About from '../About';
+import PageinHeader from '../PageinHeader';
 const AboutPage = () => {
     return ( 
 
         <div>
+            <PageinHeader name="Hakkimizda" header="Hakkimizda"></PageinHeader>
  <About/>
 <Features/>
         </div>

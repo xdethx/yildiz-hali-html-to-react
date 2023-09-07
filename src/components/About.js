@@ -1,5 +1,5 @@
 import React from 'react';
-
+import {Link} from 'react-router-dom';
 const About = () => {
     return ( 
 <div>
@@ -19,7 +19,8 @@ const About = () => {
                     <h5 className="text-muted font-weight-normal mb-3">Sizlere en iyi,hijyenik,ilk günkü gibi temiz halıları sunmak için 25 yıllık tecrübemizle burdayız  </h5>
                     <p>İki nesil babadan oğula geçen,yeni ekip arkadaşları ile hem tecrübesini hem çalışma kapasitesini arttıran yıldız halı yıkama,İstanbul anadolu yakasındaki müşterilerini temiz,hijyenik halılara kavuşturmak için burada...</p>
                     <div className="d-flex align-items-center pt-4">
-                        <a href="about.html" className="btn btn-primary mr-5">Daha Fazla...</a>
+                       
+                        <Link to="/hakkimizda" className="btn btn-primary mr-5">Daha Fazla</Link>
                         <button type="button" className="btn-play" data-toggle="modal"
                             data-src="img/roll.mp4" data-target="#videoModal">
                             <span></span>
