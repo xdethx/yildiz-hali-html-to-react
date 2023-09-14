@@ -10,7 +10,7 @@ import HomePage from './components/pages/HomePage';
 import BlogPage from './components/pages/BlogPage';
 import BlogDetailPage from './components/pages/BlogDetailPage';
 
-import {Helmet} from "react-helmet";
+import {Helmet,HelmetProvider} from "react-helmet-async";
 
 
 function App() {
@@ -117,7 +117,7 @@ function App() {
 
 
   <BrowserRouter>
- 
+  <HelmetProvider>
   <Header/>
   
       <Routes>
@@ -145,6 +145,7 @@ function App() {
 
 
   </Helmet>
+  </HelmetProvider>
   </BrowserRouter>
 
   

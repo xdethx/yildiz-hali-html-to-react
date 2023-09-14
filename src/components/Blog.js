@@ -1,5 +1,5 @@
 import React from 'react';
-
+import {Link} from 'react-router-dom';
 const Blog = () => {
     return ( 
         <div>
@@ -30,7 +30,8 @@ const Blog = () => {
                     </div>
                     <h5 className="font-weight-medium mb-2">Makine Halı Yıkama</h5>
                     <p className="mb-4">Makine halılar nasıl yıkanır?Detaylı bilgi...</p>
-                    <a className="btn btn-sm btn-primary py-2" href="makineHali.html">Okumaya devam et...</a>
+                 
+                    <Link to="/blog/blog-detay/1" className="btn btn-sm btn-primary py-2">Okumaya Devam et</Link>
                 </div>
                 <div className="col-lg-4 col-md-6 mb-5">
                     <div className="position-relative mb-4">
@@ -47,7 +48,8 @@ const Blog = () => {
                     </div>
                     <h5 className="font-weight-medium mb-2">El Dokuma Halı Yıkama</h5>
                     <p className="mb-4">El dokuma halılar nasıl yıkanır?Detaylı bilgi...</p>
-                    <a className="btn btn-sm btn-primary py-2" href="dokumaHali.html">Okumaya devam et...</a>
+                    
+                    <Link to="/blog/blog-detay/2" className="btn btn-sm btn-primary py-2">Okumaya Devam et</Link>
                 </div>
                 <div className="col-lg-4 col-md-6 mb-5">
                     <div className="position-relative mb-4">
@@ -64,7 +66,8 @@ const Blog = () => {
                     </div>
                     <h5 className="font-weight-medium mb-2">Bambu Halı Yıkama</h5>
                     <p className="mb-4">Bambu halılar nasıl yıkanır?Detaylı bilgi...</p>
-                    <a className="btn btn-sm btn-primary py-2" href="bambuHali.html">Okumaya devam et..</a>
+                   
+                    <Link to="/blog/blog-detay/3" className="btn btn-sm btn-primary py-2">Okumaya Devam et</Link>
                 </div>
             </div>
         </div>
